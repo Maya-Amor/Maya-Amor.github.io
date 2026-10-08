@@ -1,0 +1,17 @@
+# Local preview server (not part of the website)
+.claude/
+
+# Original exports — the site uses the optimized copies in assets/wordwise and assets/sender
+assets/worwise photos/
+assets/sender photos/
+assets/home screen preview photos/sender preview.png
+assets/home screen preview photos/Worwise preview.png
+assets/logo maya.png
+
+# Old annotation arrows (arrows are now drawn in code)
+assets/wordwise/icons/arrow-*.svg
+
+# System files
+Thumbs.db
+desktop.ini
+.DS_Store

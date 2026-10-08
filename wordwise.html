@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordWise case study | Maya Amor</title>
+  <meta name="description" content="How do you fix a learning loop that's losing its learners? Redesigning the WordWise language learning platform.">
+
+  <!-- Link preview (LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Maya Amor">
+  <meta property="og:title" content="WordWise case study | Maya Amor">
+  <meta property="og:description" content="How do you fix a learning loop that's losing its learners? Redesigning the WordWise language learning platform.">
+  <meta property="og:url" content="https://mayaamor122.github.io/wordwise.html">
+  <meta property="og:image" content="https://mayaamor122.github.io/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mayaamor122.github.io/wordwise.html">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300..700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Lets CSS know JavaScript is on, so scroll animations only hide content when they can reveal it -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="page-case">
+
+  <!-- ===== Sticky header (already docked on this page) ===== -->
+  <header class="site-header">
+
+    <a class="site-header__logo" href="index.html" aria-label="Maya Amor, home">
+      <img src="assets/icons/logo.svg" alt="" width="46" height="56">
+    </a>
+
+    <button class="site-header__menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="site-header__nav" id="site-nav">
+      <nav class="pill-nav" aria-label="Main">
+        <a class="pill-nav__link" href="index.html#projects" aria-current="page">My projects</a>
+        <a class="pill-nav__link" href="about.html">About</a>
+        <a class="pill-nav__link" href="#contact">Let’s Talk</a>
+        <a class="pill-nav__link" href="assets/Maya%20Amor%20Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="pill-nav__link" href="https://www.linkedin.com/in/maya-amor/" target="_blank" rel="noopener">Linkedin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cs container">
+
+    <!-- ===== Intro ===== -->
+    <div class="cs-hero">
+      <nav class="cs-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html#projects">
+          <img src="assets/wordwise/icons/breadcrumb-arrow.svg" alt="" width="23" height="8">
+          My projects
+        </a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page"><strong>WordWise</strong></span>
+      </nav>
+
+      <h1 class="cs-title cs-title--wordwise">How do you fix a learning loop that's losing its learners?</h1>
+      <p class="cs-lead">Redesigning a language learning platform to create a clearer, more intuitive experience for learning, reviewing and progressing.</p>
+
+      <figure class="cs-shot cs-shot--hero">
+        <img src="assets/wordwise/hero-home.png" alt="The redesigned WordWise home screen: a greeting, the last practice session with a progress bar, learning stats and texts to continue practicing" width="1920" height="1135">
+      </figure>
+    </div>
+
+    <!-- ===== Project overview ===== -->
+    <section class="cs-section cs-overview reveal" id="overview" data-section="Overview">
+      <div>
+        <h2 class="cs-h2 cs-h2--accent">Project Overview</h2>
+        <div class="cs-text">
+          <p>WordWise is a language learning platform <strong>focused on vocabulary acquisition through smart repetition.</strong></p>
+          <p>The project involved redesigning its existing experience to make learning and reviewing words clearer and easier to navigate.</p>
+        </div>
+      </div>
+
+      <dl class="cs-facts">
+        <div>
+          <dt>My Role</dt>
+          <dd>Product Designer</dd>
+        </div>
+        <div>
+          <dt>Timeline</dt>
+          <dd>August - October 2025</dd>
+          <dd>September 2026 - Redesign</dd>
+        </div>
+        <div>
+          <dt>Project Type</dt>
+          <dd>UI, Real world Project</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ===== The challenge ===== -->
+    <section class="cs-section reveal" id="challenge" data-section="Challenge">
+      <h2 class="cs-h2">The challenge</h2>
+      <div class="cs-text">
+        <p><strong>WordWise had the right core concept, but the experience made it difficult for users to know where to start.</strong></p>
+        <p>The original product was built around learning vocabulary through repeated practice, but <strong>its interface lacked a clear structure and hierarchy. Some elements were difficult to understand, and the next step in the learning process was not always obvious.</strong> Initial usability tests conducted by the creator revealed that users were frequently unsure where to begin or how to navigate the experience.</p>
+      </div>
+      <p class="cs-callout cs-callout--strong">The core challenge was to rethink the existing experience and establish a clearer, more intuitive interface while keeping the core learning methodology intact.</p>
+    </section>
+
+    <!-- ===== Understanding the product ===== -->
+    <section class="cs-section" id="understanding" data-section="Understanding">
+      <div class="reveal">
+        <h2 class="cs-h2">Understanding the product</h2>
+        <div class="cs-text">
+          <p>Before redesigning the experience, <strong>I collaborated with the software engineer to understand how WordWise works, who it is designed for, and what structural support the learning experience requires.</strong> WordWise is built around smart repetition - learners flag words they don't know and revisit them systematically over time, rather than relying on rote memorization alone.</p>
+          <p><strong>Together, we audited the existing interface, reviewing main screens and evaluating unclear elements, interactions, and flows. This surfaced key areas where the product's structure and purpose were obscured:</strong></p>
+        </div>
+      </div>
+
+      <!-- Annotated screenshot: notes sit on the image on desktop, below it on tablet/phone -->
+      <figure class="anno anno--legacy reveal">
+        <div class="anno__stage">
+          <img class="anno__img" src="assets/wordwise/legacy-home.png" alt="The original WordWise home screen: a purple welcome banner and brightly colored Daily Challenge, Quick Access and Learning Snapshot cards" width="1312" height="857">
+          <div class="anno__notes">
+            <p class="anno__note" style="left:35.8%; top:25.55%; width:21.05%"><strong>No personalization</strong> New and returning learners see the exact same interface.</p>
+            <p class="anno__note" style="left:75.49%; top:36.85%; width:21.05%"><strong>Unclear feature purpose</strong> Certain elements fail to communicate their function.</p>
+            <p class="anno__note" style="left:9.81%; top:48.14%; width:22.92%"><strong>Lack of navigation</strong> Users have no straightforward way to return to the previous screen.</p>
+            <p class="anno__note" style="left:50.93%; top:74.8%; width:21.05%"><strong>Visual overload</strong> A heavy color palette makes it difficult for learners to focus.</p>
+            <p class="anno__note" style="left:9.81%; top:77.95%; width:22.92%"><strong>Unclear hierarchy</strong> Important information and primary actions compete for attention.</p>
+          </div>
+        </div>
+      </figure>
+
+      <div class="cs-text cs-block reveal">
+        <p><strong>Together, we defined the target audience</strong>: a broad demographic ranging from ages 10 to 99, with a unified <strong>focus on making vocabulary practice more accessible.</strong></p>
+        <p>Given the project's scope, this definition relied on input from the product's creator rather than direct user research - a constraint that shaped how broadly the design needed to generalize, rather than allowing for narrower, persona-specific decisions.</p>
+      </div>
+    </section>
+
+    <!-- ===== Competitive research ===== -->
+    <section class="cs-section" id="research" data-section="Research">
+      <div class="reveal">
+        <h2 class="cs-h2">Competitive Research</h2>
+        <div class="cs-text">
+          <p>To analyze how other language learning products structure their experiences, <strong>I conducted a competitive audit across five platforms: Duolingo, Drops, Memrise, Qlango, and Babbel.</strong> The research focused on six key pillars: learning flow, vocabulary practice, repetition, progress tracking, personalization, and motivation.</p>
+          <p><strong>To expand my initial feature-based research, I used AI as a research assistant.</strong> I first defined core investigative questions, then used Gemini to gather and organize platform data. I brought these findings into my design synthesis and used ChatGPT to cross reference results and identify recurring industry patterns.</p>
+        </div>
+      </div>
+
+      <div class="cs-block reveal">
+        <h3 class="cs-h3">What I found?</h3>
+        <ul class="cs-cards cs-cards--2">
+          <li class="cs-card">
+            <h4 class="cs-card__title">Learning follows a structured path</h4>
+            <p>Platforms guide users sequentially through new content.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">Review is Embedded in the Loop</h4>
+            <p>Previously acquired content is systematically reintroduced through regular repetition.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">Progress is made visible</h4>
+            <p>Learners can easily track completed modules, current standing, and overall progressing.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">Practice Utilizes Multi Modal Interactions</h4>
+            <p>Retention is supported by combining listening, writing, matching, multiple choice questions, and short interactive exercises.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Defining the opportunity ===== -->
+    <section class="cs-section" id="opportunity" data-section="Opportunity">
+      <div class="reveal">
+        <h2 class="cs-h2">Defining the opportunity</h2>
+        <div class="cs-text">
+          <p>While the existing experience gave learners access to various features, it failed to connect them into a cohesive learning journey.</p>
+        </div>
+      </div>
+
+      <div class="cs-block reveal">
+        <h3 class="cs-h4 cs-h4--navy">The existing navigation structure</h3>
+        <div class="navmap">
+          <div class="navmap__node navmap__node--root">Home</div>
+          <img class="navmap__lines" src="assets/wordwise/icons/nav-structure-lines.svg" alt="" width="763" height="78">
+          <span class="navmap__arrow" aria-hidden="true"></span>
+          <ul class="navmap__row">
+            <li class="navmap__node">Practice</li>
+            <li class="navmap__node">Daily Challenge</li>
+            <li class="navmap__node">Vocabulary</li>
+            <li class="navmap__node">Profile</li>
+            <li class="navmap__node">Language</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-block reveal">
+        <div class="cs-text">
+          <p>Synthesizing insights from the existing WordWise product and competitive benchmarks, highlighted clear opportunities for structural impact:</p>
+        </div>
+        <ul class="cs-cards cs-cards--3 cs-cards--sm">
+          <li class="cs-card">
+            <h4 class="cs-card__title">Establish a Clearer Hierarchy</h4>
+            <p>Help learners instantly understand what matters right now, what actions are available, and what can wait.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">Surface Continuous Progress</h4>
+            <p>Provide persistent feedback on current placement and upcoming milestones.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">Build a Connected Learning Flow</h4>
+            <p>Unify practice, vocabulary acquisition, and review into a single continuous loop rather than treating them as separate interactions.</p>
+          </li>
+        </ul>
+        <p class="cs-statement">The goal wasn't to replicate features from competing apps, but to adapt proven structural patterns to resolve existing friction points in WordWise.</p>
+      </div>
+    </section>
+
+    <!-- ===== Revisiting the experience ===== -->
+    <section class="cs-section" id="revisiting" data-section="Revisiting">
+      <div class="reveal">
+        <h2 class="cs-h2">Revisiting the experience</h2>
+        <div class="cs-text">
+          <p>With these opportunities defined, I audited the original WordWise interface to restructure the layout and plan how interventions would integrate into the product ecosystem.</p>
+        </div>
+      </div>
+
+      <div class="cs-block reveal">
+        <h3 class="cs-h4">The Legacy experience (Pre redesign)</h3>
+        <div class="cs-legacy">
+          <figure class="cs-shot">
+            <img src="assets/wordwise/legacy-practice.png" alt="The original Reading Practice screen: a reading text with highlighted words, an unknown words list and practice tips" width="1218" height="865">
+          </figure>
+          <div class="cs-verdict cs-verdict--bad">
+            <img src="assets/wordwise/icons/icon-x.svg" alt="" width="24" height="24">
+            <div>
+              <h4>What didn’t work</h4>
+              <p><u>Unclear hierarchy</u><br>Critical sections and actions shared identical visual weight.</p>
+              <p><u>Unclear interactions</u><br>Buttons and interactive elements failed to signal their utility.</p>
+              <p><u>Unclear learning flow</u><br>The interface offered zero orientation regarding current user location or next steps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block cs-block--step reveal">
+        <h3 class="cs-h4">First redesign Iteration</h3>
+        <div class="cs-text">
+          <p>Reorganizing the interface, introducing new functional modules, and establishing a more structured visual system.</p>
+        </div>
+      </div>
+
+      <figure class="cs-shot cs-shot--contain reveal">
+        <img src="assets/wordwise/iteration-home.png" alt="First redesign iteration of the home screen: a welcome card, progress stats, a daily challenge and links to words and stories" width="1920" height="1252" loading="lazy">
+        <figcaption>Home screen</figcaption>
+      </figure>
+      <figure class="cs-shot cs-shot--contain reveal">
+        <img src="assets/wordwise/iteration-practice.png" alt="First redesign iteration of the practice screen: instructions, daily progress, the text with highlighted words and an unknown words list" width="1920" height="1581" loading="lazy">
+        <figcaption>Practice screen</figcaption>
+      </figure>
+      <figure class="cs-shot cs-shot--contain reveal">
+        <img src="assets/wordwise/iteration-vocabulary.png" alt="First redesign iteration of the vocabulary screen: progress, filters, a word table and a form to add a new word" width="1920" height="1480" loading="lazy">
+        <figcaption>Vocabulary screen</figcaption>
+      </figure>
+
+      <div class="cs-verdicts reveal">
+        <div class="cs-verdict cs-verdict--good">
+          <img src="assets/wordwise/icons/icon-check.svg" alt="" width="24" height="24">
+          <div>
+            <h4>What improved</h4>
+            <p>Restructured content hierarchy.</p>
+            <p>Introduced dedicated learning and review components.</p>
+          </div>
+        </div>
+        <div class="cs-verdict cs-verdict--bad">
+          <img src="assets/wordwise/icons/icon-x.svg" alt="" width="24" height="24">
+          <div>
+            <h4>What still wasn't solved</h4>
+            <p><u>Unresolved Hierarchy</u><br>Primary and secondary actions still lacked sufficient visual differentiation.</p>
+            <p><u>Similar progress indicators</u><br>Different progress metrics relied on identical visual styling, causing user confusion.</p>
+            <p><u>Fragmented Flow</u><br>Transitions between regular practice, memory games, and new text modules weren't clearly communicated.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="cs-callout cs-block reveal">While the initial visual cleanup improved aesthetics, fundamental UX questions remained regarding how learners transition between learning, review, and progress tracking. <strong>To stress test these choices, I used Claude as an objective review tool to critique my architecture and uncover overlooked edge cases.</strong></p>
+    </section>
+
+    <!-- ===== The new possible solution ===== -->
+    <section class="cs-section" id="solution" data-section="Solution">
+      <div class="reveal">
+        <h2 class="cs-h2">The new possible solution</h2>
+        <div class="cs-text">
+          <p>By synthesizing together the competitive research, the legacy friction points in the original product, and the UX problems I identified in my initial iteration, I began mapping a cohesive new learning flow.</p>
+          <p>Rather than designing screens in isolation, I mapped out the end to end architecture, defining what happens before, during, and after each learning activity. I developed this flow iteratively, using ChatGPT as a thinking partner to explore different structures, ask UX questions, and optimize the transition from one state to the next.</p>
+          <p>From these explorations, I selected the structure that best preserved user orientation at each transition point, while discarding directions that added complexity without clear learning value.</p>
+        </div>
+      </div>
+
+      <div class="cs-block reveal">
+        <h3 class="cs-h3">The new learning flow</h3>
+
+        <!-- Flow diagram, drawn in code so it stays sharp. Scrolls sideways on phones. -->
+        <div class="flow" tabindex="0" role="img" aria-label="The new learning flow: Home, then Start or continue to learn, then Practice. In practice you tap a word or read and explore the text, then add words to your vocabulary. A learning checkpoint offers a memory game or skipping and reading on, then you continue learning the text. A summary follows, which leads to starting a new text or back home.">
+          <svg class="flow__svg" viewBox="-2 -2 744 912" aria-hidden="true">
+            <defs>
+              <marker id="flow-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M2 1 L9 5 L2 9" fill="none" stroke="#909090" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </marker>
+            </defs>
+
+            <g class="flow__links" fill="none" stroke="#909090" stroke-width="1" marker-end="url(#flow-arrow)">
+              <path d="M140.5 30 H184.7"/>
+              <path d="M393.7 30 H437.8"/>
+              <path d="M502.5 57.6 V82 Q502.5 86 498.5 86 H455.5 Q451.5 86 451.5 90 V125.5"/>
+              <path d="M527.5 57.6 V82 Q527.5 86 531.5 86 H574.5 Q578.5 86 578.5 90 V125.5"/>
+              <path d="M451.5 183 V203 Q451.5 207 455.5 207 H498.5 Q502.5 207 502.5 211 V249"/>
+              <path d="M578.5 183 V203 Q578.5 207 574.5 207 H531.5 Q527.5 207 527.5 211 V249"/>
+              <path d="M510.5 314.4 V358.6"/>
+              <path d="M497.5 422.6 V447 Q497.5 451 493.5 451 H450.5 Q446.5 451 446.5 455 V490.4"/>
+              <path d="M527.5 422.6 V447 Q527.5 451 531.5 451 H574.5 Q578.5 451 578.5 455 V490.4"/>
+              <path d="M451.5 546.4 V566 Q451.5 570 455.5 570 H498.5 Q502.5 570 502.5 574 V612"/>
+              <path d="M578.5 546.4 V566 Q578.5 570 574.5 570 H531.5 Q527.5 570 527.5 574 V612"/>
+              <path d="M510.5 677.3 V721.5"/>
+              <path d="M510.5 795.5 V839.6"/>
+              <path d="M440.6 758.5 H70.9 Q66.9 758.5 66.9 754.5 V71.5"/>
+            </g>
+
+            <g class="flow__nodes">
+              <g class="flow__node flow__node--root"><rect x="8.5" y="8" width="117" height="44" rx="10"/><text x="67" y="30">Home</text></g>
+              <g class="flow__node"><rect x="199.7" y="8" width="179" height="44" rx="10"/><text x="289.2" y="30">Start / Continue to learn</text></g>
+              <g class="flow__node"><rect x="452.8" y="8" width="111" height="44" rx="10"/><text x="508.3" y="30">Practice</text></g>
+              <g class="flow__node"><rect x="356" y="133" width="118" height="44" rx="10"/><text x="415" y="155">Tap a word</text></g>
+              <g class="flow__node"><rect x="549.5" y="133" width="182" height="44" rx="10"/><text x="640.5" y="155">Read &amp; Explore the text</text></g>
+              <g class="flow__node"><rect x="431" y="255" width="158" height="44" rx="10"/><text x="510" y="277">Add to vocabulary</text></g>
+              <g class="flow__node"><rect x="431.5" y="373.6" width="158" height="44" rx="10"/><text x="510.5" y="395.6">Learning checkpoint</text></g>
+              <g class="flow__node"><rect x="330.5" y="496" width="145" height="44" rx="10"/><text x="403" y="518">Memory Game</text></g>
+              <g class="flow__node"><rect x="550.5" y="496.6" width="169" height="44" rx="10"/><text x="635" y="518.6">Skip and keep reading</text></g>
+              <g class="flow__node"><rect x="396.5" y="618.3" width="228" height="44" rx="10"/><text x="510.5" y="640.3">Continue Learning the text</text></g>
+              <g class="flow__node"><rect x="455" y="736.5" width="111" height="44" rx="10"/><text x="510.5" y="758.5">Summary</text></g>
+              <g class="flow__node"><rect x="421" y="854.6" width="179" height="44" rx="10"/><text x="510.5" y="876.6">Start a new text</text></g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="cs-text cs-block reveal">
+        <p>With the structural skeleton established, I used Claude and Figma Agents to explore diverse visual layouts for each screen, curating the strongest options as a baseline in Figma.</p>
+      </div>
+
+      <div class="cs-block reveal">
+        <h3 class="cs-h4 cs-h4--light">What changed in the flow</h3>
+        <ul class="cs-cards cs-cards--3 cs-cards--sm">
+          <li class="cs-card">
+            <h4 class="cs-card__title">From isolated actions to a unified journey</h4>
+            <p>Reading, vocabulary, practice, and review are seamlessly linked within a single learning experience.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">From unclear transitions to contextual progress</h4>
+            <p>Added checkpoints to help learners understand where they are in the text and why the experience is transitioning to the next activity.</p>
+          </li>
+          <li class="cs-card">
+            <h4 class="cs-card__title">From “what now?” to guided next steps</h4>
+            <p>The experience guides learners through active practice, completion, and the next logical choice.</p>
+          </li>
+        </ul>
+        <div class="cs-statement">
+          <p>After I finished designing the full screens, I used Gemini to run iterative automated UX audits on hierarchy, visual clarity, and layout friction, refining the design across multiple review cycles.</p>
+          <p>Not every suggestion was adopted. Flagged issues were weighed against the product's actual learning flow before being applied.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== The redesigned experience ===== -->
+    <section class="cs-section" id="redesign" data-section="Redesign">
+      <div class="reveal">
+        <h2 class="cs-h2 cs-h2--bold">The redesigned experience</h2>
+        <div class="cs-text">
+          <p>For this case study, I focused the redesign on three core screens: Home, Practice, and Vocabulary, that best demonstrate the shift in structural thinking. Memory Game and Summary follow the same design logic but weren't rebuilt in full for this phase.</p>
+        </div>
+      </div>
+
+      <figure class="anno anno--home reveal">
+        <div class="anno__stage">
+          <img class="anno__img" src="assets/wordwise/new-home.png" alt="The redesigned home screen with a side menu, a personal greeting, the last practice with a Resume Session button, progress stats and texts to continue practicing" width="1920" height="1077" loading="lazy">
+          <!-- Arrows from each note to what it points at (drawn by js/main.js) -->
+          <svg class="anno__links" aria-hidden="true" data-links='[{"tail":[29.57,4.29],"corner":[24.88,4.29],"head":[24.88,9.24]},{"tail":[83.4,16.98],"corner":[88.09,16.98],"head":[88.09,21.93]},{"tail":[17.01,49.44],"corner":[17.01,44.2],"head":[12.97,44.2]},{"tail":[64.24,47.13],"corner":[68.93,47.13],"head":[68.93,52.08]},{"from":"bottom","points":[[21.6,93.4],[27.91,93.4],[27.91,90.7]]},{"tail":[79.54,75.78],"corner":[79.54,70.54],"head":[84.75,70.54]}]'></svg>
+          <div class="anno__notes">
+            <p class="anno__note" style="left:29.82%; top:-9.48%; width:26.1%"><strong>Personalized greeting</strong> New and returning learners now see different messaging: a welcome message for first time users, and a simple return greeting for those already in the system.</p>
+            <p class="anno__note" style="left:59.98%; top:9.92%; width:22.92%"><strong>Clear next step</strong> “Resume session" establishes a singular, prominent starting point rather than forcing users to parse competing actions.</p>
+            <p class="anno__note" style="left:38.71%; top:34.04%; width:25.33%"><strong>Progress at a glance</strong> Core learning metrics surface high-level status without cluttering the home page into an overwhelming dashboard.</p>
+            <p class="anno__note" style="left:1.75%; top:50.07%; width:18.42%"><strong>Clear way back</strong> A persistent side menu and breadcrumb trail now give learners a straightforward way to navigate backward.</p>
+            <p class="anno__note" style="left:2.08%; top:71.49%; width:20.72%"><strong>Return to unfinished learning</strong> "Continue Practicing" intelligently highlights texts that still contain unreviewed words, bridging past sessions with current engagement.</p>
+            <p class="anno__note" style="left:74.78%; top:76.19%; width:21.27%">Completed texts remain securely archived in the library without competing for attention.</p>
+          </div>
+        </div>
+        <figcaption>Home screen</figcaption>
+      </figure>
+
+      <figure class="anno reveal">
+        <div class="anno__stage">
+          <img class="anno__img" src="assets/wordwise/new-practice.png" alt="The redesigned practice screen: a Spanish reading text with a word selected, showing its translation, pronunciation and familiarity, and a list of words in this text" width="1920" height="1347" loading="lazy">
+          <!-- Arrows from each note to what it points at (drawn by js/main.js) -->
+          <svg class="anno__links" aria-hidden="true" data-links='[{"tail":[58.78,47.03],"corner":[53.72,47.03],"head":[53.72,42.89]},{"tail":[33.91,68.98],"corner":[38.6,68.98],"head":[38.6,72.93]}]'></svg>
+          <div class="anno__notes">
+            <p class="anno__note" style="left:58.99%; top:42.97%; width:29.61%"><strong>Learn without leaving the text</strong> Selecting any word inline instantly surfaces its definition, pronunciation, and familiarity status, along with a quick way to add it to the personal dictionary - so learners can explore unfamiliar vocabulary without breaking their reading momentum.</p>
+            <p class="anno__note" style="left:8.88%; top:59.7%; width:24.78%"><strong>Connected learning loop</strong> Words encountered in the text remain visible as part of the learning context, connecting the reading experience to the learner's vocabulary.</p>
+          </div>
+        </div>
+        <figcaption>Practice screen</figcaption>
+      </figure>
+
+      <figure class="anno reveal">
+        <div class="anno__stage">
+          <img class="anno__img" src="assets/wordwise/new-practice-checkpoint.png" alt="The practice screen at a checkpoint: “You've reached a checkpoint” with buttons to practice now or skip and keep reading" width="1920" height="1347" loading="lazy">
+          <!-- Arrows from each note to what it points at (drawn by js/main.js) -->
+          <svg class="anno__links" aria-hidden="true" data-links='[{"tail":[45.31,70.31],"corner":[50,70.31],"head":[50,66.36]}]'></svg>
+          <div class="anno__notes">
+            <p class="anno__note" style="left:19.19%; top:58.84%; width:25.77%"><strong>Strategic checkpoints</strong> Checkpoints connect reading with practice, letting learners choose when to reinforce newly encountered vocabulary.</p>
+          </div>
+        </div>
+        <figcaption>Practice screen - Checkpoint state</figcaption>
+      </figure>
+
+      <figure class="anno reveal">
+        <div class="anno__stage">
+          <img class="anno__img" src="assets/wordwise/new-vocabulary.png" alt="The redesigned vocabulary screen: 248 words with search, status and category filters, and each word's translation, pronunciation, status and source text" width="1920" height="1347" loading="lazy">
+          <!-- Arrows from each note to what it points at (drawn by js/main.js) -->
+          <svg class="anno__links" aria-hidden="true" data-links='[{"tail":[51.84,30.15],"corner":[51.84,36.83],"head":[47.31,36.83]},{"tail":[49.89,57.17],"corner":[54.58,57.17],"head":[54.58,53]},{"tail":[73.57,62.94],"corner":[73.57,59.76],"head":[78.26,59.76]}]'></svg>
+          <div class="anno__notes">
+            <p class="anno__note" style="left:47.37%; top:16.42%; width:22.92%"><strong>Find and filter</strong> Search and filters make it easier to navigate a growing vocabulary and focus on specific word groups.</p>
+            <p class="anno__note" style="left:26.75%; top:51.49%; width:22.92%"><strong>Understand each word</strong> Each saved term maintains its contextual definition, pronunciation, and mastery status in one organized view.</p>
+            <p class="anno__note" style="left:70.83%; top:63.37%; width:22.92%"><strong>Return to context</strong> Words stay persistently linked to their original source text, allowing learners to jump back into context whenever needed.</p>
+          </div>
+        </div>
+        <figcaption>Vocabulary screen</figcaption>
+      </figure>
+
+      <div class="cs-text cs-block reveal">
+        <p>Together, these changes also addressed two gaps from the original audit: every interactive element now communicates its purpose through clear labeling, and the simplified color system reduces the visual load that made the original interface feel overwhelming.</p>
+      </div>
+    </section>
+
+    <!-- ===== Reflection ===== -->
+    <section class="cs-section" id="reflection" data-section="Reflection">
+      <div class="reveal">
+        <h2 class="cs-h2">Reflection</h2>
+        <p class="cs-subtitle">Reworking WordWise gave me the opportunity to look at my own design from a different perspective.</p>
+      </div>
+      <ul class="cs-cards cs-cards--3 cs-cards--reflection reveal">
+        <li class="cs-card">
+          <h3 class="cs-card__title">Question my own work</h3>
+          <p>It can be difficult to notice problems in something you have just designed. <strong>Revisiting my first redesign helped me</strong> step back from decisions I had already made and <strong>recognize UX issues I hadn't seen the first time around.</strong></p>
+        </li>
+        <li class="cs-card">
+          <h3 class="cs-card__title">Think beyond individual screens</h3>
+          <p><strong>Working on the new flow made me think</strong> less about how each screen should look and more <strong>about how the screens, actions, and states connect.</strong> The experience started to feel less like a collection of screens and more like one connected system.</p>
+        </li>
+        <li class="cs-card">
+          <h3 class="cs-card__title">Use AI to challenge my thinking</h3>
+          <p>Working with AI showed me that its value isn't only in generating visual options.<br>I used it to question decisions, explore different directions, and review the work from another perspective. I learned to treat its suggestions as input rather than absolute answers - <strong>the final design decisions still needed to come from me and make sense for the product.</strong></p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer id="contact" class="footer">
+    <!-- Closing line: the top of the footer -->
+    <div class="footer__cta container reveal">
+      <h2 class="footer__title">Got something worth<br>complaining about?</h2>
+      <p class="footer__subtitle">I'm open to product design roles and collaborations.</p>
+    </div>
+
+    <div class="footer__inner container">
+      <p class="footer__copy">Maya Amor | All Rights Reserved ©</p>
+
+      <div class="footer__contact">
+        <span>Maya4085@gmail.com</span>
+        <span>052-2256403</span>
+      </div>
+
+      <div class="footer__actions">
+        <nav class="pill-nav pill-nav--footer" aria-label="External links">
+          <a class="pill-nav__link" href="assets/Maya%20Amor%20Resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a class="pill-nav__link" href="https://www.linkedin.com/in/maya-amor/" target="_blank" rel="noopener">Linkedin</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating back-to-top button, appears once you start scrolling -->
+  <a class="back-to-top" href="#top" aria-label="Back to top">
+    <img src="assets/icons/back-to-top.svg" alt="" width="47" height="47">
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
