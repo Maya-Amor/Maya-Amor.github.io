@@ -828,6 +828,12 @@ ul {
   }
 
   .site-header__menu-btn {
+    -webkit-appearance: none;     /* iPhone: drop the default button styling */
+    appearance: none;
+    color: var(--text-strong);
+  }
+
+  .site-header__menu-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -845,16 +851,18 @@ ul {
 
   .site-header__menu-btn span {
     display: block;
-    height: 1.5px;
+    flex-shrink: 0;
+    width: 1rem;                  /* explicit size so the lines always draw (iPhone) */
+    height: 2px;
     background: var(--text-strong);
     border-radius: 2px;
     transition: transform 0.35s var(--ease-out), opacity 0.2s ease;
   }
 
   /* Hamburger → X */
-  .menu-open .site-header__menu-btn span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .menu-open .site-header__menu-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .menu-open .site-header__menu-btn span:nth-child(2) { opacity: 0; }
-  .menu-open .site-header__menu-btn span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+  .menu-open .site-header__menu-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   .site-header__nav {
     position: absolute;
@@ -2430,7 +2438,8 @@ ul {
 
 /* Phones: notes sit in a loose two-column pile instead of the wide board */
 @media (max-width: 640px) {
-  .facts { margin-top: 6rem; }
+  /* Phones: the sticky notes are hidden (desktop and tablet only) */
+  .facts { display: none; }
 
   .facts__board {
     display: grid;
@@ -2549,19 +2558,10 @@ ul {
   .hero-note__text { font-size: 1rem; }
 }
 
-/* Phones: sits in the hero below the menu button, tap to open About */
+/* Phones: hidden (the notes on About are desktop and tablet only) */
 @media (max-width: 640px) {
   .hero-note {
-    position: relative;
-    top: auto;
-    right: auto;
-    left: auto;
-    width: 6.5rem;
-    margin-top: 0.5rem;
-    transform: rotate(10deg);
-    touch-action: auto;
-    cursor: pointer;
-    animation-delay: 2.6s;
+    display: none;
   }
 }
 
