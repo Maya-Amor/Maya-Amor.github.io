@@ -2568,3 +2568,31 @@ ul {
 @media (prefers-reduced-motion: reduce) {
   .hero-note { animation: none; }
 }
+
+/* =========================================================
+   Case studies: "Next project" button at the very end
+   ========================================================= */
+/* Centered, with the same space above it as the footer has below it,
+   so it sits halfway between the reflection and the footer */
+.cs-next {
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;               /* same as the footer below it (see .page-case .footer) */
+}
+
+.page-case .footer {
+  margin-top: 9rem;
+}
+
+.cs-next .btn-pill__arrow {
+  transition: translate 0.25s var(--ease-out);
+}
+
+.cs-next .btn-pill:hover .btn-pill__arrow {
+  translate: 0.2rem 0;            /* arrow nudges forward on hover */
+}
+
+@media (max-width: 960px) {
+  .cs-next,
+  .page-case .footer { margin-top: 6.5rem; }   /* equal gaps on tablet and phone */
+}
